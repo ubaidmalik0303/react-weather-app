@@ -1,0 +1,176 @@
+.container{
+  background: url('./assets/cold.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 70px;
+  height: 100vh;
+  width: 100vw;
+  transition: background 0.5s linear;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar{
+  width: 100%;
+  background-color: white;
+  outline: none;
+  border: none;
+  appearance: none;
+  font-size: 25px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 2px rgb(182, 181, 181);
+}
+
+.search-bar::placeholder{
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.city-detail{
+  margin: 70px 0 0 0;
+}
+
+.city-detail h1{
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.city-detail h2{
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+}
+
+.weather{
+  margin: 20px auto;
+  background-color: rgba(243, 243, 243, 0.6);
+  border-radius: 10px;
+  padding: 20px 50px;
+  text-align: center;
+  display: flex;
+}
+
+.weather h1{
+  font-size: 150px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.clouds{
+  font-size: 80px;
+  color: white;
+  font-style: italic;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.notfound{
+  font-size: 50px;
+  color: white;
+  margin: 50px 0 0 0;
+  font-style: italic;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.search-city-heading{
+  font-size: 50px;
+  color: white;
+  margin: 50px 0 0 0;
+  font-style: italic;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+@media screen and (max-width: 768px){
+
+  .container{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 10px;
+    height: 100vh;
+    width: 100vw;
+    transition: background 0.5s linear;
+  }
+  
+  .main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar{
+    width: 100%;
+    background-color: white;
+    outline: none;
+    border: none;
+    appearance: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 2px rgb(182, 181, 181);
+  }
+  
+  .search-bar::placeholder{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .city-detail{
+    margin: 70px 0 0 0;
+  }
+  
+  .city-detail h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .city-detail h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .weather{
+    margin: 20px auto;
+    background-color: rgba(243, 243, 243, 0.6);
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+  }
+
+  .weather h1{
+    font-size: 90px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  }
+
+  .clouds{
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+  }
+
+  .search-city-heading{
+    font-size: 40px;
+  }
+
+}
